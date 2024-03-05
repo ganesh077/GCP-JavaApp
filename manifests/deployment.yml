@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: gcp-java-app
-        image: ganesh077/sprigboot-cicd:2
+        image: ganesh077/sprigboot-cicd:10
         ports:
         - containerPort: 8080
