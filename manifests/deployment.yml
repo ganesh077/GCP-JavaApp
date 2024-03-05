@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: GCP-JavaApp
+  name: gcp-java-app
   labels:
-    app: GCP-JavaApp
+    app: gcp-java-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: GCP-JavaApp
+      app: gcp-java-app
   template:
     metadata:
       labels:
-        app: GCP-JavaApp
+        app: gcp-java-app
     spec:
       containers:
-      - name: GCP-JavaApp
+      - name: gcp-java-app
         image: ganesh077/sprigboot-cicd:2
         ports:
         - containerPort: 8080
