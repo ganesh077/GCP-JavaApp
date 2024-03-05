@@ -10,6 +10,7 @@ pipeline {
       steps {
         sh 'echo passed'
         //git branch: 'main', url: 'https://github.com/ganesh077/GCP-JavaApp.git'
+        sh 'sudo chmod -R ugo+rwX'
       }
     }
     stage('Build and Test') {
