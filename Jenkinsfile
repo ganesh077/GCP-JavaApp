@@ -56,7 +56,7 @@ pipeline {
                     git config user.email "ganeshthampi077@gmail.com"
                     git config user.name "Ganesh Thampi"
                     BUILD_NUMBER=${BUILD_NUMBER}
-                    sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" manifests/deployment.yml
+                    sed -i "s|ganesh077/sprigboot-cicd:.*|ganesh077/sprigboot-cicd:${BUILD_NUMBER}|g" manifests/deployment.yml
                     git add manifests/deployment.yml
                     git commit -m "Update deployment image to version ${BUILD_NUMBER}"
                     git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
