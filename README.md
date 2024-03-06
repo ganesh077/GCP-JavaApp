@@ -6,6 +6,8 @@
 - Sonarqube
 - Argo CD
 
+<img src="flow.png" width=850 height=350>
+
 ## Steps:
 
 1. **Install Necessary Jenkins Plugins:**
@@ -26,6 +28,8 @@
    - **Stage 5:** Package application into a JAR file.
    - **Stage 6:** Dockerize the application and push it to the docker hub. Update the manifest files.
    - **Stage 7:** Promote application to production environment using Argo CD.
+  
+<img src="jenkins.png" width=850 height=350>
 
 4. **Configure Jenkins Pipeline Stages:**
    - Detailed configuration steps outlined for each stage.
