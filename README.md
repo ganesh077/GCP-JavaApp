@@ -29,7 +29,8 @@
    - **Stage 6:** Dockerize the application and push it to the docker hub. Update the manifest files.
    - **Stage 7:** Promote application to production environment using Argo CD.
   
-<img src="jenkins.png" width=850 height=350>
+<img src="pipelines.png" width=850 height=350>
+<img src="sonar.png" width=850 height=350>
 
 4. **Configure Jenkins Pipeline Stages:**
    - Detailed configuration steps outlined for each stage.
@@ -38,6 +39,8 @@
    - Install Argo CD on the Kubernetes cluster.
    - Set up Git repository for Argo CD to track changes in Kubernetes manifests.
    - Deploy to Kubernetes cluster when changes are detected.
+  
+<img src="argocd.png" width=850 height=350>
 
 6. **Configure Jenkins Pipeline to Integrate with Argo CD:**
    - Add Argo CD API token to Jenkins credentials.
@@ -46,5 +49,7 @@
 7. **Run the Jenkins Pipeline:**
    - Trigger Jenkins pipeline to start CI/CD process for Java application.
    - Monitor pipeline stages and fix any issues that arise.
+  
+<img src="appscreen.png" width=850 height=350>
 
 This end-to-end Jenkins pipeline automates a Java application's entire CI/CD process, from code checkout to production deployment, utilizing popular tools like SonarQube, Argo CD, and Kubernetes.
