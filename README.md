@@ -1,7 +1,7 @@
 # Setting up an End-to-End Jenkins Pipeline for a Java Application with SonarQube, Argo CD, and Kubernetes
 
 ## Prerequisites:
-- Jenkins server
+- Provision a GCP VM and install Jenkins server and setup sonarqube in it.
 - Kubernetes cluster(Minikube)
 - Sonarqube
 - Argo CD
